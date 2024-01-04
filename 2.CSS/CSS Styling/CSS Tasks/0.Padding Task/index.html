@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding and margin</title>
+    <style>
+        #p1{
+            margin-left: 150px;
+        }
+        #p2{
+            margin-left: 110px;
+        }
+        #p3{
+            margin-left: 70px;
+        }
+        #p4{
+            margin-left: 70px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            padding: 40px;
+        }
+        .d1{
+            width: 500px;
+            height: 250px;
+            background-color: cadetblue;
+            padding: 40px;
+        }
+        .d2{
+            width: 400px;
+            height: 150px;
+            background-color: orange;
+            padding-top: 30px;
+        }
+        .d3{
+            width: 300px;
+            height: 50px;
+            background-color: cadetblue;
+            padding-top: 30px;
+        }
+        .d4{
+            width: 300px;
+            height: 40px;
+            background-color: aqua;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1"><p id="p1"><b>margin</b></p>
+    <div class="d2" class="p1"><p id="p2"><b>border</b></p>
+        <div class="d3" class="p1"><p id="p3"><b>padding</b></p>
+            <div class="d4" class="p1"><p id="p4"><b>content</b></p></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

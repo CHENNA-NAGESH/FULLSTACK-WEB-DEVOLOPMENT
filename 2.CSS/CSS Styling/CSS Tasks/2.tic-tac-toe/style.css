@@ -1,0 +1,91 @@
+.main{
+    width: 686px;
+    height: 600px;
+
+    padding: 0px;
+    border: 5px solid black;
+}
+.subbox1{
+    width: 646px;
+    height: 200px;
+    margin-left: 20px;
+    border-bottom: 2px solid black;
+    margin-right: 20px;
+
+}
+.s1b1{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black;
+    float: left;
+}
+.s1b2{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black;
+    float: left;
+}
+.s1b3{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.s2b1{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black;
+    float: left;
+}
+.s2b2{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black;
+    float: left;
+}
+.s2b3{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.subbox2{
+    width: 646px;
+    height: 200px;
+    margin-left: 20px;
+    border-bottom: 2px solid black;
+    margin-right: 20px;
+
+}
+.subbox3{
+    width: 646px;
+    height: 200px;
+    margin-left:20px;
+    margin-right: 20px;
+}
+.s3b1{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black;
+    float: left;
+}
+.s3b2{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black;
+    float: left;
+}
+.s3b3{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+div{
+    font-size: 170px;
+    text-align: center;
+
+}
+

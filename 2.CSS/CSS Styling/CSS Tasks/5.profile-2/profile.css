@@ -1,0 +1,256 @@
+.d1{
+    width: 570px;
+    height: 720px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.d2{
+    width:40%;
+    height: 100%;
+    background-color: #2A2E37ff;
+    float: left;
+}
+.d3{
+    width: 342px;
+    height: 100%;
+    float: right;
+    background-color: white;
+}
+body{
+    background-color: rgb(225, 225, 224);
+}
+.d4{
+    width: 70%;
+    height: 180px;
+    margin-top: 40px;
+}
+.img1{
+    width: 126px;
+    height: 160px;
+    border: 10px solid white;
+}
+.d5{
+    width: 85%;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 29px;
+}
+.d6{
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 24%;
+
+}
+.d7{
+    width: 10%;
+    height: 70%;
+    background-color: #F0D54Fff;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d8{
+    color: white;
+    font-size: 12px;
+    width: 100px;
+    height: 70%;
+    display: flex;
+    justify-content: start;
+    margin-left: 8px;
+}
+.d9{
+    color: white;
+    font-size: 12px;
+    width: 200px;
+    height: 70%;
+    display: flex;
+    justify-content: start;
+    margin-left: 8px;
+}
+.d10{
+    width: 13%;
+    height: 70%;
+    background-color: #F0D54Fff;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d11{
+    width:85%;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 29px;
+}
+.d12{
+    width:100%;
+    height: 24px;
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    display: flex;
+    justify-content: start;
+}
+.d13{
+    width: 100%;
+    height: 2px;
+    background-color: #F0D54Fff;
+    margin-top: 8px;
+}
+.d14{
+    width: 100%;
+    height: 14px;
+    font-size: 12px;
+    color: white;
+    margin-top: 13px;
+    display: flex;
+    justify-content: start;
+}
+.d15{
+    margin-top: 65px;
+    position: relative;
+    right: 41px;
+    width: 384px;
+    height: 100px;
+    background-color: #F0D54Fff;
+}
+.d16{
+    width: 290px;
+    height: 32px;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+    top: 15px;
+    right: 5px;
+}
+.d17{
+    width: 200px;
+    height: 16px;
+    font-size:16px;
+    position: relative;
+    top: 23px;
+    right: 105px;
+}
+.d18{
+    width:300px;
+    height: 120px;
+    margin-top: 15px;
+}
+.d19{
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: left;
+}
+.d20{
+    width: 100%;
+    height: 3px;
+    background-color: #F0D54Fff;
+    margin-top: 10px;
+}
+.d21{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.d22{
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+.d23{
+    width: 47%;
+    height: 100%;
+    float: right;
+}
+.d24{
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+    height: 14px;
+    margin-top: 3px;
+}
+#i1{
+    font-weight: 500;
+    position: relative;
+}
+.d25{
+    font-size: 12px;
+    margin-top: 3px;
+    width: 100%;
+    height: 12px;
+    display: flex;
+    justify-content: left;
+}
+.d26{
+    width: 300px;
+    height: 387px;
+    margin-top: 30px;
+}
+.d27{
+    width: 100%;
+    height: 280px;
+    margin-top: 10px;
+}
+.d28{
+    width: 25px;
+    height: 270px;
+    float: left;
+    position: relative;
+    top: 5px;
+}
+.d29{
+    width: 275px;
+    height: 339px;
+    float: right;
+}
+.d30{
+    width: 5px;
+    height: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.d31{
+    width: 2px;
+    height: 105px;
+    background-color: black;
+}
+.d32{
+    width: 100%;
+    height: 12px;
+    font-size: 12px;
+    color: rgb(179, 179, 175);
+    display: flex;
+    justify-content: left;
+}
+.d33{
+    width: 100%;
+    height: 16px;
+    font-size: 16px;
+    display: flex;
+    justify-content: start;
+    margin-top: 3px;
+}
+.d34{
+    width: 100%;
+    height: 60px;
+    margin-top: 8px;
+    font-size: 10px;
+    text-align: start;
+    color: rgb(179, 179, 175);
+}
+.d35{
+    width: 100%;
+    height: 110px;
+}
+.d36{
+    width: 100%;
+    height: 110px;
+    margin-top: 10px;
+}
+.d37{
+    margin-top: 10px;
+}
