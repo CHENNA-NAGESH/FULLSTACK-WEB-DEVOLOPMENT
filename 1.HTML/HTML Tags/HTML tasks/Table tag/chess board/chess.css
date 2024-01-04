@@ -1,0 +1,16 @@
+td{
+    height: 20px;width: 20px;text-align: center;
+}
+.black{
+    background-color: rgba(5, 121, 5, 0.966);
+}
+.white{
+    background-color: wheat;
+}
+div{
+    border: 2px solid black;
+    table-layout: auto;
+}
+img{
+    height: 20px;width: 20px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form </title>
+</head>
+<body>
+    <h1><center>Form Tag in HTML</center></h1>
+    <p>attributes of input tag are: value,readonly,disabled,maxlength,placeholder,required,autofocus,autocomplete</p>
+    <form>
+        <label for="fs" >Enter Name:</label>
+        <input type="text" id="fs"  value="Nagesh Chenna" placeholder="Enter Name" disabled><br><br>
+        <label for="number" >Enter Mobile Number:</label>
+        <input type="number" autofocus id="number" maxlength="10" placeholder="Enter Number" required><br><br>
+        <label for="em" >Enter email:</label>
+        <input type="email" id="em" placeholder="Enter Email" autocomplete="off" required><br><br>
+        <label for="pass">Enter password:</label>
+        <input type="password" id="pass" placeholder="Enter Password" autocomplete="off" required><br><br>
+        <label for="ra" >Gender:</label>
+        <input type="radio" id="ra"  name="gender">Male&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="ra"  name="gender">Female <br><br>
+        <label for="che">Enter hobbies:</label>
+        <input type="checkbox" id="che">Reading Books &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="che">Watching tv &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="che">Learning New Things<br><br>
+        <label for="da" required>Enter Date:</label>
+        <input type="date" id="da"><br><br>
+        <label for="tex">Enter Address:</label><br>
+        <textarea id="tex" cols="30" rows="10"></textarea><br><br>
+        <input type="submit" id="su"> &nbsp;&nbsp;&nbsp;
+        <input type="reset" id="re">
+    </form>
+</body>
+</html>
