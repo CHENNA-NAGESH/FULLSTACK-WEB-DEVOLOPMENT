@@ -1,0 +1,45 @@
+.d1{
+    width: 220px;
+    height: 300px;
+    background-color: greenyellow;
+    float: left;
+    border: 2px solid black;
+    font-size: 30px;
+    margin-left: 15px;
+    transition-duration: 3s;
+}
+.d1:hover{
+    transform: skew(40deg,20deg);
+    background-color: pink;
+    transition-duration: 3s;
+}
+.d2{
+    width: 220px;
+    height: 300px;
+    background-color: red;
+    float: left;
+    border: 2px solid black;
+    font-size: 30px;
+    margin-left: 15px;
+    transition-duration: 3s;
+}
+.d2:hover{
+    transform: skewX(40deg);
+    background-color: aqua;
+    transition-duration: 3s;
+}
+.d3{
+    width: 220px;
+    height: 300px;
+    background-color: violet;
+    float: left;
+    border: 2px solid black;
+    font-size: 30px;
+    margin-left: 15px;
+    transition-duration: 3s;
+}
+.d3:hover{
+    transform: skewY(50deg);
+    background-color: maroon;
+    transition-duration: 3s;
+}

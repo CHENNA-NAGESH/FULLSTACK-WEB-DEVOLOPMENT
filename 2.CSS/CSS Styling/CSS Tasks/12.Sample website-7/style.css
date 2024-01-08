@@ -1,0 +1,43 @@
+.img1{
+    width: 280px;
+    height: 450px;
+}
+.d1{
+    width: 300px;
+    height: 450px;
+    border: 10px solid black;
+    margin-left: 50px;
+    float: left;
+}.d2{
+    width: 300px;
+    height: 450px;
+    border: 10px solid black;
+    float: left;
+    position: relative;
+    right: 250px;
+    top: 50px;
+}.d3{
+    width: 300px;
+    height: 450px;
+    border: 10px solid black;
+    float: left;
+    position: relative;
+    right: 500px;
+    top: 100px;
+}.d4{
+    width: 300px;
+    height: 450px;
+    border: 10px solid black;
+    float: left;
+    position: relative;
+    right: 750px;
+    top: 150px;
+}.d5{
+    width: 300px;
+    height: 450px;
+    border: 10px solid black;
+    float: left;
+    position: relative;
+    left: 310px;
+    bottom: 260px;
+}
