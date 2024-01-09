@@ -1,0 +1,162 @@
+.d1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: test;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    float: left;
+    animation-iteration-count: infinite;
+}
+@keyframes test{
+    0%{
+        background-color: red;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: blue;
+        top: 0px;
+        left: 600px;
+    }
+    50%{
+        background-color: green;
+        top: 300px;
+        left: 600px;
+    }
+    75%{
+        background-color: yellow;
+        top: 300px;
+        left: 0px;
+    }
+    100%{
+        background-color: orangered;
+        top: 0px;
+        left: 0px;
+    }
+
+}
+.d2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: test2;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    margin-left: 600px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes test2{
+    0%{
+        background-color: red;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: blue;
+        top: 300px;
+        left: 0px;
+    }
+    50%{
+        background-color: green;
+        top: 300px;
+        left: -600px;
+    }
+    75%{
+        background-color: yellow;
+        top: 0px;
+        left: -600px;
+    }
+    100%{
+        background-color: orangered;
+        top: 0px;
+        left: 0px;
+    }
+
+}
+.d3{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: test3;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    float: left;
+    margin-top: 100px;
+    animation-iteration-count: infinite;
+}
+@keyframes test3{
+    0%{
+        background-color: red;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: blue;
+        top: -300px;
+        left: 0px;
+    }
+    50%{
+        background-color: green;
+        top: -300px;
+        left: 600px;
+    }
+    75%{
+        background-color: yellow;
+        top: 0px;
+        left: 600px;
+    }
+    100%{
+        background-color: orangered;
+        top: 0px;
+        left: 0px;
+    }
+}
+.d4{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: test4;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    float: left;
+    margin-top: 100px;
+    margin-left: 400px;
+    animation-iteration-count: infinite;
+}
+@keyframes test4{
+    0%{
+        background-color: red;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: blue;
+        top: 0px;
+        left: -600px;
+    }
+    50%{
+        background-color: green;
+        top: -300px;
+        left: -600px;
+    }
+    75%{
+        background-color: yellow;
+        top: -300px;
+        left: 0px;
+    }
+    100%{
+        background-color: orangered;
+        top: 0px;
+        left: 0px;
+    }
+}
