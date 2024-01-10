@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+}
+.d{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+@media only all  and (min-width:600px) and (max-width:750px)
+{
+    body{
+        background-color: green;
+    }
+    .d{
+        background-color: chartreuse;
+    }
+}
