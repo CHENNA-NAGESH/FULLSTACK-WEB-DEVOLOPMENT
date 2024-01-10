@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h2>Company Name</h2>
+  <div class="container">
+ 
+    <div class="back">
+<img src="back1.png" alt="">
+    </div>
+    <div>
+    <form>
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" class="form-control" id="firstName" placeholder="Enter first name" name="firstName">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Enter last name" name="lastName">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="job">Choose your job:</label>
+        <select class="form-control" id="job" name="job">
+          <option>Job 1</option>
+          <option>Job 2</option>
+          <option>Job 3</option>
+          <option>Job 4</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+      </div>
+      <div class="form-group">
+        <label for="passwordConfirm">Confirm Password:</label>
+        <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirm password" name="passwordConfirm">
+      </div>
+      <button type="submit" class="btn btn-primary">Create your account</button>
+      <br><br>
+      <p>OR</p>
+      <button type="submit" class="btn btn-primary">Continue with Facebook</button>
+      <button type="submit" class="btn btn-primary">Continue with Twitter</button>
+    </form>
+    <br><br>
+    <p>Already Registered? <a href="#">Login</a></p>
+  </div>
+</div>
+</body>
+</html>
