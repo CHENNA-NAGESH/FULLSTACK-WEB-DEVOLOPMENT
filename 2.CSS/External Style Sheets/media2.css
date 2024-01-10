@@ -1,0 +1,53 @@
+.d1{
+    width: 220px;
+    height: 300px;
+    background-color: skyblue;
+    float: left;
+    font-size: 30px;
+}
+.d2{
+    width: 220px;
+    height: 300px;
+    background-color: orange;
+    float: left;
+    font-size: 30px;
+}
+.d3{
+    width: 220px;
+    height: 300px;
+    background-color: orangered;
+    float: left;
+    font-size: 30px;
+}
+.d4{
+    width: 220px;
+    height: 300px;
+    background-color: blue;
+    float: left;
+    font-size: 30px;
+}
+@media screen and (min-width:220px) and (max-width:456px){
+    .d1,.d2,.d3,.d4{
+        width: 100%;
+    }
+}
+@media screen and (min-width:457px) and (max-width:676px) {
+    .d1,.d2,.d3,.d4{
+        width: 50%;
+    }
+}
+@media screen and (min-width:677px) and (max-width:896px) {
+    .d1,.d2,.d3,.d4{
+        width: 33%;
+    }
+}
+@media screen and (min-width:897px) and (max-width:1117px) {
+    .d1,.d2,.d3,.d4{
+        width: 25%;
+    }
+}
+@media screen and (min-width:1118px) and (max-width:1200px) {
+    .d1,.d2,.d3,.d4{
+        width: 20%;
+    }
+}
