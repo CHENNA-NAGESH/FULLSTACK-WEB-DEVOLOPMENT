@@ -1,0 +1,72 @@
+.main{
+    height: 650px;
+    width: 1000px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .main1{
+      height: 48%;
+      width: 100%;
+      margin-bottom: 4%;
+    
+    }
+    .main2{
+      height: 48%;
+      width: 100%;
+    
+    }
+    .first{
+      height: 100%;
+      width: 48%;
+      background-color: greenyellow;
+      float: left;
+    }
+    .second{
+      height: 100%;
+      width: 48%;
+      background-color: white;
+      float: left;
+    }
+    .last{
+      margin-right: 4%;
+    }
+    .second1{
+      width: 100%;
+      height: 50%;
+      float: left;
+    }
+    .second2{
+      width: 100%;
+      height: 50%;
+      float: left;1
+    }
+    .subchild1{
+      height: 98%;
+      width: 48%;
+      background-color:pink;
+      float: left;
+    }
+    .subchild2{
+      height: 98%;
+      width: 48%;
+      background-color:skyblue;
+      float: left;
+    }
+    .first{
+      margin-bottom: 4%;
+    }
+    @media screen and (max-width:1014px) and (min-width:610px)  {
+    .main{
+      width: 100%;
+    }
+    
+    }
+    @media screen and (max-width:610px){
+    .child{
+      width: 100%;
+    }  
+    .main{
+      width: 100%;
+    }
+    }
