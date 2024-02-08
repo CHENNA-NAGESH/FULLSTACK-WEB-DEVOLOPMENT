@@ -1,0 +1,55 @@
+#a{
+    color: black;
+}
+#a:hover{
+    color: skyblue;
+}
+#b{
+    height: 550px;
+    background: url(../images/proto.jpg);
+    background-size: cover;
+}
+#d{
+    margin-top: 100px;
+}
+#f{
+    margin-top: 50px;
+}
+#e{
+    color: rgb(86, 118, 246);
+    text-decoration: underline;
+}
+#g{
+    background-color: black;
+}
+#h{
+    color: rgb(57, 84, 171);
+}
+#i{
+    background-color: rgb(185, 196, 241);
+}
+#j{
+    color: rgb(86, 118, 246);
+    text-decoration: underline 2px gray;
+}
+#k{
+    background-color: black;
+}
+#l{
+    background-color: rgb(72, 148, 241)
+}
+#m{
+    background-color: rgb(188, 195, 241);
+    height: 700px;
+}
+#n{
+    background-color: rgb(135, 204, 236);
+}
+#o{
+    height: 100px;
+    width: 100px;
+}
+.img1{
+    width: 200px;
+    height: 240px;
+}
