@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        var obj = {
+            Ali : '21255-CM-001',
+            Nagesh : '21255-CM-006' ,
+            Pradeep : '21255-CM-024',
+            Dileep : '21255-CM-054'
+        };
+        console.log(obj);
+        console.log(obj.Ali);               //printing element using dor notation
+        console.log(obj['Nagesh']);         //printing element using array notation
+        obj.Rohith = '21255-CM-040';        //adding an element to object
+        console.log(obj);
+        delete obj.Ali;                     //deleting an element from object
+        console.log(obj);
+        console.log('Rohith' in obj);       //check whether key present in object
+    </script>
+</body>
+</html>
