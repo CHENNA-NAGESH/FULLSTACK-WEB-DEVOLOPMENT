@@ -23,13 +23,29 @@
         y=prompt('enter y value');
         console.log('else if ladder:');
         if(a<b){
-            console(y+'is bigger');
+            console.log(y+' is bigger');
         }
         else if(a>b){
-            console.log(x+'is bigger');
+            console.log(x+' is bigger');
         }
         else{
             console.log('X and Y are equal');
+        }
+        console.log('Nested if statement');
+        var p,q,r;
+        p=prompt('enter p value:');
+        q=prompt('enter q value:');
+        r=prompt('enter r value:');
+        if(p>q){
+            if(p>r){
+                console.log('p is greater');
+            }
+        }
+        else if(q>r){
+            console.log('q  is greater');
+        }
+        else{
+            console.log('r is greater');
         }
     </script>
 </body>
