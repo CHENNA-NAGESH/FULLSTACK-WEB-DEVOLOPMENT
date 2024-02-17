@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+        let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        let months2 = ['December'];
+        document.write("Length of array is: " + months.length);
+        document.write("<br>Conversion of array to String: " + months.toString());
+        document.write('<br>value at index 2 is: ' + months.at(2));
+        document.write('<br>Joining array elements using *: ' + months.join('*'));
+        document.write('<br>Popping ending element of array: ' + months.pop());
+        document.write('<br>Pushing element at the end of array: ' + months.push('December'));
+        document.write('<br>Removing starting element of an array: ' + months.shift());
+        document.write('br>Adding element at the beginning of an array: ' + months.unshift('January'));
+        //document.write('<br>Deleting element at q particular index: ' + (delete months[11]));
+        document.write('<br>Concatenating 2 arrays: ' + months.concat(months2));
+        document.write('<br>Removing multiple elements using splice method: ' + months.splice(2,2));
+        document.write("<br>Adding multiple elements using splice method: " + months.splice(2, 0, 'March', 'April') + months.join(','));
+        document.write("<br>Slicing of array of elements: " + months.slice(1,3));
+        document.write('Final array result: ' + months.toString());
+    </script>
+</body>
+</html>

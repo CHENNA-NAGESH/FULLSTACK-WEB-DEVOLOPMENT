@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <script>
+        let str1 = 'Pradeep Lokesh';
+        let str2 = 'Jaya Dileep';
+        document.write("Length of string is: " + str1.length);
+        document.write("<br>Character at index 2 is: " + str1.charAt(2));
+        document.write("<br>Ascii value of character present at index 2 is: " + str1.charCodeAt(2));
+        document.write('<br>Getting character at specified index using at method: ' + str1.at(2));
+        str1[2] = 'A';      //Gives no error but does not work
+        document.write("<br>Changing character value using index method: " + str1);
+        document.write("<br>Slicing of string using slice method: " + str1.slice(2, 10));
+        document.write('<br>Getting substring from original string using substring method: ' + str1.substring(2,11));
+        document.write('<br>Getting substring from original string using substr method: ' + str1.substr(2,7));      //Second parameter specifies the number of characters to be fetched
+        document.write('<br>Converting String to uppercase: ' + str1.toUpperCase());
+        document.write('<br>Converting String to lowercase: ' + str1.toLowerCase());
+        document.write('<br>Concatenating strings using Concat method: ' + str1.concat(' ', str2));
+        document.write('<br>Repeating a string using repeat method: ' + str1.repeat(2));
+        document.write('<br>Deleting starting spaces of  a string: ' + str1.trimStart());       //Removes starting spaces
+        document.write('<br>Removing ending spaces from the string: ' + str1.trimEnd());        //Removes ending spaces
+        document.write('<br>Adding some characters at beginning of string: ' + str1.padStart(20, '*'));
+        document.write('<br>Adding some characters at end of string: ' + str1.padEnd(20, '*'));
+        document.write('<br>Replacing string content using string replace method: ' + str1.replace('Lokesh', 'Narayana'));
+        let text = "I love cats. Cats are very easy to love. Cats are very popular."
+        document.write('<br>String before using replaceAll function: ' + text);
+        text = text.replaceAll("Cats","Dogs");
+        document.write('<br>String after using replaceAll function: ' + text);
+        document.write('<br>Spliting of string after specified character and adds commas: ' + text.split(' '));
+        
+</script>
+</body>
+</html>
