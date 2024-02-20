@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing text</title>
+    <style>
+        #l1,#l2,#l3{
+            color:red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li id = 'l1'>AEC</li>
+        <li id="l2">ACET</li>
+        <li id="l3">ACOE</li><br>
+        <button onclick="func1()">click to see the full names of college</button><br><br>
+        <button onclick="func2()">click to see the college names in bold</button><br><br>
+        <button onclick="func3()">click to change background</button><br><br>
+        <button onclick="func4()">click to apply margin</button><br><br>
+        <button onclick="func5()">click to change the text family</button><br><br>
+    </ol>
+    <script>
+        function func1(){
+            document.getElementById('l1').innerHTML = 'Aditya Engineering College';
+            document.getElementById('l2').innerHTML = 'Aditya College Of Engineering and Technology';
+            document.getElementById('l3').innerHTML = 'Aditya College Of Engineering ';
+        }
+        function func2(){
+            
+            document.getElementById('l1').innerHTML = '<b>Aditya Engineering College</b>';
+            document.getElementById('l2').innerHTML = '<b>Aditya College Of Engineering and Technology</b>';
+            document.getElementById('l3').innerHTML = '<b>Aditya College Of Engineering</b>';
+        }
+        function func3(){
+            document.getElementById('l1').style.backgroundColor = 'orange';
+        }
+        function func4(){
+            document.getElementById('l2').style.border = "2px solid red";
+        }
+        function func5(){
+            document.getElementById('l3').style.fontFamily = 'arial';
+        }
+    </script>
+</body>
+</html>

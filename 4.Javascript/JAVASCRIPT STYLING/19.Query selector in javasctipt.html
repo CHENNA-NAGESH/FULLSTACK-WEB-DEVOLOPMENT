@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query selector</title>
+</head>
+<body>
+    <p id="p1">hello world!!</p>
+    <p id="p2">Hi ali</p>
+    <span id="p2">Span tag</span><br>
+    <span id = "p2">span tag 2</span>
+    <script>
+        const qs = document.querySelector('#p1');
+        qs.style.backgroundColor = 'red';
+        const qsa = document.querySelectorAll("#p1, #p2");
+        console.log(qsa);
+        qsa[0].style.backgroundColor = 'orange';
+        qsa[1].style.backgroundColor = 'green';
+        qsa[2].style.backgroundColor = 'blue';
+        qsa[3].style.backgroundColor = 'red';
+        for(let i=0;i<qsa.length;i++)
+        {
+            qsa[i].style.fontSize = "30px";
+        }
+    </script>
+</body>
+</html>

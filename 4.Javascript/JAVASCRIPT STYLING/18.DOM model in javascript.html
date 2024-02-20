@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p id = 'p1'>Hello World!!!</p>
+    <button id = 'demo' onclick="func1()">Click the button to change the text</button>
+    <button id = 'demo' onclick="func2()">Click the button to enlarge the text</button>
+    <button id = 'demo' onclick="func3()">Click the button to change the color</button><br>
+    <span class="sp">span 1</span>
+    <span class="sp">span 2</span>
+    <br><button id = 'demo2' onclick="func4()">click to change color of span 2</button>
+    <button id = 'demo2' onclick="func5()">click to change color of span 1</button>
+    <script>
+        function func1(){
+            document.getElementById('p1').innerHTML = 'Hello Ali';                  //by using id
+        }
+        function func2(){
+            document.getElementById('p1').style.fontSize = '50px';
+        }
+        function func3(){
+            document.getElementById('p1').style.color = 'Red';
+        }
+        function func4(){
+            document.getElementsByClassName('sp')[1].style.color = 'blue';
+        }
+        function func5(){
+            document.getElementsByClassName('sp')[0].style.color = 'orange';
+        }
+    </script>
+</body>
+</html>
