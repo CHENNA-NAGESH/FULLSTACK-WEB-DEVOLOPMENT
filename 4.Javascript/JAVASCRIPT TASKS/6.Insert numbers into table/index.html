@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            width: 250px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table id="table1">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <button id = "btn">Get numbers</button>
+    <script>
+        var toggle = 1;
+        var btn1 = document.getElementById("btn");
+        btn1.addEventListener('click', ()=>{
+            const td1 = document.querySelectorAll("td");
+            if(toggle==1){
+                for(i=0;i<td1.length;i++)
+                {
+                    td1[i].innerText = i+1;
+                }
+                toggle = 0;
+            }
+            else if(toggle == 0){
+                for(i=td1.length;i>0;i--){
+                    td1[td1.length-i].innerText = i;
+                }
+                toggle = 1;
+            }
+        })
+    </script>
+</body>
+</html>

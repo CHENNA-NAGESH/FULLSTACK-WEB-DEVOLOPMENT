@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changing image</title>
+</head>
+<body>
+    <script>
+        const img1 = document.createElement("img");
+        const bd = document.body;
+        img1.setAttribute("src", "sparrow.jpeg");
+        img1.setAttribute("id", "img1")
+        bd.appendChild(img1);
+        const btn1 = document.createElement("button");
+        const br1 = document.createElement("br");
+        bd.appendChild(br1)
+        btn1.innerText = "change pic";
+        bd.appendChild(btn1);
+        btn1.addEventListener("click", ()=>{
+            img1.setAttribute("src", "sparrow.png");
+        })
+    </script>
+</body>
+</html>

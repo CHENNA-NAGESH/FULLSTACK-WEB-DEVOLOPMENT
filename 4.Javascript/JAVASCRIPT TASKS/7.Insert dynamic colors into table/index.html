@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic colors</title><style>
+        table,tr,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            width: 250px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table id="table1">
+        <tr>
+            <td>Ali</td>
+            <td>Dileep</td>
+            <td>Nagesh</td>
+        </tr>
+        <tr>
+            <td>Pradeep</td>
+            <td>Vijay</td>
+            <td>Rohith</td>
+        </tr>
+        <tr>
+            <td>Akash</td>
+            <td>Chandu</td>
+            <td>Vinay</td>
+        </tr>
+    </table>
+    <button id="btn">click me</button>
+    <script>
+        const color = ["red", "blue","green","orange","yellow","violet","indigo","purple", "coral", "crimson"];
+        const btn1 = document.getElementById("btn");
+        btn1.addEventListener('click',()=>{
+            const td1 = document.querySelectorAll("td");
+            for(i=0;i<td1.length;i++)
+            {
+                td1[i].style.backgroundColor = color[Math.floor(Math.random()*color.length)];
+            }
+        })
+    </script>
+</body>
+</html>

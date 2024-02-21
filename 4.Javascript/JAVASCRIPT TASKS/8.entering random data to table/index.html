@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          table,tr,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            width: 250px;
+          
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>course  Name</th>
+                <th>course  Number</th>
+                <th>course FEes </th>
+                <th>PLace</th>
+            </tr>
+        </thead >
+        <tbody id="bdy">
+        </tbody>
+    </table>
+    <script>
+        var obj=[{
+            "course_name":"html",
+            "course_number":"23453",
+            "course_fee":55555555,
+            "place":"dwp"
+        },
+        {
+            "course_name":"css",
+            "course_number":"11111111",
+            "course_fee":55555555,
+            "place":"dwp"
+        }
+    ,
+    {
+            "course_name":"js",
+            "course_number":"22222222",
+            "course_fee":66666666,
+            "place":"dwp"
+    },
+        {
+            "course_name":"bootstarp",
+            "course_number":"33333333",
+            "course_fee":77777777,
+            "place":"dwp"
+        },
+        {
+            "course_name":"bootstarp",
+            "course_number":"44444444",
+            "course_fee":88888888,
+            "place":"dwp"
+        }, {
+            "course_name":"bootstarp",
+            "course_number":"44444444",
+            "course_fee":88888888,
+            "place":"dwp"
+        },{
+            "course_name":"bootstarp",
+            "course_number":"44444444",
+            "course_fee":88888888,
+            "place":"dwp"
+        },
+        {
+            "course_name":"bootstarp",
+            "course_number":"44444444",
+            "course_fee":88888888,
+            "place":"dwp"
+        }];
+        var tbody=document.getElementById("bdy");
+        for(var i=0;i<obj.length;i++){
+            var td=[];
+           var tr= document.createElement("tr");
+            td[0]=document.createElement("td");
+           td[0].innerText=obj[i].course_name;
+            td[1]=document.createElement("td");
+           td[1].innerText=obj[i].course_number;
+            td[2]=document.createElement("td");
+           td[2].innerText=obj[i].course_fee;
+            td[3]=document.createElement("td");
+           td[3].innerText=obj[i].place;
+           tr.appendChild(td[0]);
+           tr.appendChild(td[1]);
+           tr.appendChild(td[2]);
+           tr.appendChild(td[3]);
+           tbody.appendChild(tr);
+
+        }
+    </script>
+</body>
+</html>

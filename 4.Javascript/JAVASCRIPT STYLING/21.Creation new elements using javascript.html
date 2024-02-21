@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating elements</title>
+</head>
+<body>
+    <script>
+        const bd = document.body;
+        const div1 = document.createElement('div');
+        bd.appendChild(div1);
+        div1.innerText = "This is text"
+        div1.style.cssText = `height:200px;
+                              width:200px;
+                              color:red;
+                              padding:20px;
+                              background-color:yellow;
+                              border:10px solid red;
+                              border-radius: 20px`
+        div1.setAttribute("id", "div1");
+        const br1 = document.createElement('br');
+        bd.append(br1);
+        const btn = document.createElement("button");
+        bd.appendChild(btn);
+        btn.setAttribute("id", "btn1");
+        btn.innerHTML = 'click me';
+        document.getElementById("btn1").addEventListener("mouseover", func1);
+        document.getElementById("btn1").addEventListener("click", func3);
+        document.getElementById("btn1").addEventListener("mouseout", func2);
+        function func1(){
+            let div11 = document.getElementById("div1");
+            div11.style.backgroundColor = "blue";
+        }
+        function func2(){
+            let div11 = document.getElementById("div1");
+            div11.style.backgroundColor = "yellow";
+        }
+        function func3(){
+            let div11 = document.getElementById("div1");
+            div11.style.backgroundColor = "green";
+        }
+    </script>
+</body>
+</html>
