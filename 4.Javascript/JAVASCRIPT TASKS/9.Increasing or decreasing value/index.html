@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+</head>
+<body>
+    <p id="p1">Count Value:<span id="sp1">0</span></p>
+    <button id="inc">Increment</button>
+    <button id="dec">Decrement</button>
+    <button id="re">Reset</button>
+    <script>
+        var count = 0;
+        const inc1 = document.getElementById("inc");
+        inc1.addEventListener('click', ()=>{
+            count+=1;
+            document.getElementById('sp1').innerText = count;
+        })
+        const dec1 = document.getElementById("dec");
+        dec1.addEventListener('click', ()=>{
+            count-=1;
+            document.getElementById('sp1').innerText = count;
+        })
+        const rec1 = document.getElementById("re");
+        rec1.addEventListener('click', ()=>{
+            count=0;
+            document.getElementById('sp1').innerText = count;
+        })
+    </script>
+</body>
+</html>
