@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1{
+            color:red;
+            font-size: 30px;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="inp1" placeholder="enter value"><br>
+    <p id="p1"></p><br><span id="sp1"></span>
+    <script>
+        var text,sp;
+        var inp = document.getElementById("inp1");
+        sp = document.getElementById("sp1");
+        inp.addEventListener('keyup', ()=>{
+            text = document.getElementById("inp1").value;
+            if(text.length<3){
+                document.getElementById("p1").innerText = "atleast contain 3 characters";
+            sp.innerText = "Number of characters: "+text.length;
+                sp.style.color = "red";
+
+            }
+            else{
+                document.getElementById("p1").innerText = ""
+                sp.innerText = "Number of characters: "+text.length
+                sp.style.color = "green";
+            }
+        })
+    </script>
+</body>
+</html>
