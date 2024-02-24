@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus and blur events</title>
+</head>
+<body>
+    <form action="" id="sub">
+        Focus:<input type="text" onfocus="sample(this)" onblur="sample4(this)" onchange="changeText(this)"><br><br>
+        Blur:<input type="text" onfocus="sample3(this)" onblur="sample2(this)"><br><br>
+        <input type="button" onclick="submitForm()" value="submit" >
+        <input type="button" onclick="resetForm()" value="reset" style="margin-left: 20px;">
+    </form>
+    <p id="p1"></p>
+    <script>
+        function sample(f){
+            f.style.cssText = `border-radius:50px;
+                               width:1000px;
+                               height:100px;
+                               background:yellow;
+                               text-transform:uppercase`
+        }
+        function sample2(e){
+            e.type = "password"
+        }
+        function sample3(e){
+            e.type = "text"
+        }
+        function sample4(e){
+            e.style.cssText = `width:170px;
+                               height:20px;
+                               border-radius:0px;
+                               background:white
+                               border:1px solid white;
+                               text-transform:uppercase`
+        }
+        function submitForm(){
+            document.getElementById("sub").submit();
+        }
+        function resetForm(){
+            document.getElementById("sub").reset();
+        }
+        function changeText(e){
+            document.getElementById("p1").innerText = e.value;
+            document.getElementById("p1").style.textTransform = "uppercase"
+        }
+    </script>
+</body>
+</html>
