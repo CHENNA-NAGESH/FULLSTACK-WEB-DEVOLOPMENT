@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateSums(numbers) {
+        let evenSum = 0;
+        let oddSum = 0;
+
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 === 0) {
+            evenSum += numbers[i];
+            } else {
+            oddSum += numbers[i];
+            }
+        }
+
+        return { evenSum, oddSum };
+        }
+        const myArray = [1, 2, 3, 4, 5, 6];
+        const results = calculateSums(myArray);
+
+        document.write("Sum of even numbers:", results.evenSum); 
+        document.write("Sum of odd numbers:", results.oddSum); 
+
+    </script>
+</body>
+</html>
