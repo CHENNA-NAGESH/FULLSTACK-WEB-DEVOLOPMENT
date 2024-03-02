@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find Name</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <input type="text" id="nameInput" placeholder="Enter a name">
+  <button onclick="findName()">Find</button>
+  <div id="result"></div>
+
+  <script>
+      const names = ['ali','bhargav','chandhu','dharma','fatima','ganesh','harshita','imran','janu'];
+      function findName() {
+      const nameInput = document.getElementById("nameInput");
+      const resultDiv = document.getElementById("result");
+      const inputName = nameInput.value;
+
+      const foundName = names.find(name => name.toLowerCase() === inputName.toLowerCase());
+
+      if (foundName) {
+          resultDiv.textContent = "Name found!";
+        } else {
+         resultDiv.textContent = "Name not found.";
+        }
+      }
+
+  </script>
+</body>
+</html>

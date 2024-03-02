@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="email" id="loi">
+  <button onclick="fun()">click here</button>
+  <h2 id="che"></h2>
+  <script>
+    function fun(){
+    let val=document.getElementById("loi").value
+    let meme=["a@gmail.com","b@gmail.com","c@gmail.com","d@gmail.com"]
+    let memecheck=false
+     memecheck=meme.some((meme,i,arr)=>{
+      return meme==val
+    })
+    console.log(memecheck)
+    let mat=document.getElementById("che")
+    if(memecheck==true){
+mat.innerText="E-mail exist"
+mat.style.color="green"
+    }
+    else{
+      
+      mat.innerText="E-mail don't exist"
+mat.style.color="red"
+    }
+  }
+  </script>
+</body>
+</html>
