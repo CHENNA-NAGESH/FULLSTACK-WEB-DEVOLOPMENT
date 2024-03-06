@@ -22,10 +22,9 @@
         inp.addEventListener('keyup', ()=>{
             text = document.getElementById("inp1").value;
             if(text.length<3){
-                document.getElementById("p1").innerText = "atleast contain 3 characters";
-            sp.innerText = "Number of characters: "+text.length;
+                document.getElementById("p1").innerText = "at least contain 3 characters";
+                sp.innerText = "Number of characters: "+text.length;
                 sp.style.color = "red";
-
             }
             else{
                 document.getElementById("p1").innerText = ""

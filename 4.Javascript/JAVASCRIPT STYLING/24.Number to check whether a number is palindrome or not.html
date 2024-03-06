@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPalindrome(number) {
+        const originalNum = number;
+        let reversed = 0;
+        while (number > 0) {
+            const lastDigit = number % 10;
+            reversed = (reversed * 10) + lastDigit;
+            number = Math.floor(number / 10);
+        }
+        return originalNum === reversed;
+        }
+        const num = parseInt(prompt("Enter a number to check whether a number palindrome or not:"));
+        if (isPalindrome(num)) {
+            document.write(num, "is a palindrome");
+        } else {
+            document.write(num, "is not a palindrome");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function displayMultiplicationTable(number) {
+        const range = parseInt(prompt("Enter Range:"));
+
+        for (let i = 1; i <= range; i++) {
+            const result = i * number;
+            document.write(`${number} * ${i} = ${result}` + "<br>");
+        }
+        }
+        const inputNumber = parseInt(prompt("Enter number to generate table"));
+        displayMultiplicationTable(inputNumber);
+
+    </script>
+</body>
+</html>
