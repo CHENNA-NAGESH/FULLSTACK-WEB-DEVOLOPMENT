@@ -19,12 +19,16 @@
         table{
             border: 4px solid black;
         }
+        #t1{
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
     <center><table style="margin-top: 50px;">
         <tr>
-            <td colspan="3" style="background-color: white;color: black;text-align: start;">0</td>
+            <td colspan="2" style="background-color: white;color: black;text-align: start;" id="t1">0</td>
+            <td class="td1">DEL</td>
             <td class="td1">C</td>
         </tr>
         <tr>
@@ -55,29 +59,39 @@
     <script>
         var tds = document.querySelectorAll("td");
         var val = '';
-        for(i=2;i<tds.length;i++){
-            if(i!=16){
+        for(i=3;i<tds.length;i++){
+            if(i!=17){
                 tds[i].addEventListener('click', (e)=>{
                     let a=e.srcElement;
                     console.log(a.innerText)
                     val+=a.innerText
-                    tds[0].innerHTML=val
+                    tds[0].innerText = val
                 })
             }
         }
-        tds[1].addEventListener('click', ()=>{
-            tds[0].innerHTML = 0
-            val = ''
-        })
-        tds[16].addEventListener('click', ()=>{
+        tds[17].addEventListener('click', ()=>{
             try{
-                var value1 = eval(val)
-                tds[0].innerHTML = value1
+                let value2 = eval(val)
+                tds[0].innerText = value2
+                val = value2
             }
             catch(error){
-                tds[0].innerHTML = undefined
+                tds[0].innerText = undefined
+            }
+        })
+        tds[1].addEventListener('click', ()=>{
+            if(val.length == 1 || val.length == 0   ){
+                tds[0].innerText = 0
                 val = ''
             }
+            else{
+                val = val.slice(0, -1)
+                tds[0].innerText = val
+            }
+        })
+        tds[2].addEventListener('click', ()=>{
+            val = ''
+            tds[0].innerText = 0
         })
     </script>
 </body>

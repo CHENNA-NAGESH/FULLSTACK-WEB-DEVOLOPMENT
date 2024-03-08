@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky draw</title>
+    <style>
+        .d1{
+            width: 350px;
+            height: 300px;
+            border: 5px solid black;
+        }
+        #inp1{
+            width: 100px;
+            height: 20px;
+        }
+        #btn2{
+            width: 100px;
+            height: 25px;
+            background-color: rgb(0, 255, 0);
+        }
+        #p1{
+            font-size: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="d1">
+            <p style="color: red;font-size: 40px;font-weight: 700;margin-top: 20px;">Guess the Number Game</p>
+            <p style="color: rgb(24, 199, 199);font-size: 20px;margin-top: 20px;">Guess a number between 1 and 10</p>
+            <div class="d2">
+                <input type="number" id="inp1">
+                <button id="btn2" onclick="rad()">Submit Guess</button>
+            </div>
+            <p id="p1"></p>
+        </div>
+    </center>
+    <script>
+        function rad(){
+            var rand_no = Math.floor(Math.random()*11)
+            var inp_no = document.getElementById('inp1').value
+            if(rand_no==inp_no){
+                document.getElementById('p1').innerText = 'congratulations'
+                document.getElementById('p1').style.color = 'green'
+            }
+            else{
+                document.getElementById('p1').innerText = 'sorry'
+                document.getElementById('p1').style.color = 'red'
+            }
+        }
+    </script>
+</body>
+</html>
