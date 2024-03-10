@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image scrolling</title>
+    <style>
+        .d2{
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            background-color: rgb(32, 30, 30);
+            float: left;
+            margin-left: 10px;
+        }
+        .d3{
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            background-color: rgb(109, 106, 106);
+            float: left;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center><img src="parrot.jpeg" alt="parrot" width="300px" height="200px" id="img1">
+    <div id="d1" style="width: 100%; margin-left: 700px;">
+        <div class="d2"></div>
+        <div class="d3"></div>
+        <div class="d3"></div>
+    </div>
+    <div id="d4" style="width: 100%;margin-left: 700px;">
+        <div class="d3"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+    </div>
+    <div id="d5" style="width: 100%;margin-left: 700px;">
+        <div class="d3"></div>
+        <div class="d3"></div>
+        <div class="d2"></div>
+    </div>
+ </center>
+    <script>
+        var imgs = ['parrot.jpeg', 'rabbit.jpeg', 'sparrow.jpeg'];
+        var count=0;
+        var img11 = document.getElementById('img1')
+        function change_image(){
+            if(count==0){
+                img11.src = imgs[0]
+                count = 1
+                document.getElementById('d1').style.display = 'block'
+                document.getElementById('d4').style.display = 'none'
+                document.getElementById('d5').style.display = 'none'
+            }
+            else if(count == 1){
+                img11.src = imgs[1]
+                count = 2
+                document.getElementById('d1').style.display = 'none'
+                document.getElementById('d4').style.display = 'block'
+                document.getElementById('d5').style.display = 'none'
+            }
+            else if(count == 2){
+                img11.src = imgs[2]
+                count=0
+                document.getElementById('d1').style.display = 'none'
+                document.getElementById('d4').style.display = 'none'
+                document.getElementById('d5').style.display = 'block'
+            }
+            setTimeout(change_image, 1000);
+        }
+        change_image();
+    </script>
+</body>
+</html>
