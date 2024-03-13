@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: antiquewhite;">
+    <center><div style="width: 95%;height: 500px;background-color: white;">
+        <p style="font-size: 30px;font-weight: 500;padding-top: 15px;">Hello JavaScript</p>
+        <img src="full cake.jpeg" alt="bulb off" width="450px" height="300px" style="margin-top: 30px;" id="img1" onmouseenter="sample()" onmouseleave="sample()"><br>
+    </div></center>
+    <script>
+        var toggle = false;
+        function sample(){
+            if(toggle){
+                document.getElementById("img1").setAttribute("src", "cut cake.jpeg")
+                toggle = false;
+            }
+            else{
+                document.getElementById("img1").setAttribute("src", "full cake.jpeg")
+                toggle = true;
+            }
+        }
+        sample()
+    </script>
+</body>
+</html>

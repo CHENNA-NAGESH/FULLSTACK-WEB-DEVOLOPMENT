@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wall Clock</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #clock {
+        width: 200px;
+        height: 200px;
+        border: 10px solid #f83636;
+        border-radius: 50%;
+        position: relative;
+        margin: 50px auto;
+        background-color: rgb(167, 232, 167);
+    }
+    .hour, .minute, .second {
+        position: absolute;
+        background-color: #333;
+        transform-origin: 100%;
+        top: 48%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+    }
+    .hour {
+        z-index: 3;
+        background-color: #333;
+        width: 30%;
+        height: 2px;
+        left: 37px;
+    }
+    .minute {
+        z-index: 2;
+        background-color: #666;
+        width: 35%;
+        height: 2px;
+        left: 26px;
+    }
+    .second {
+        z-index: 1;
+        background-color: red;
+        width: 40%;
+        height: 2px;
+        left: 18px;
+    }
+</style>
+</head>
+<body>
+<div id="clock">
+    <div class="hour"></div>
+    <div class="minute"></div>
+    <div class="second"></div>
+</div>
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = now.getHours() % 12;
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+
+        const hourDeg = (hours + minutes / 60) * 30;
+        const minuteDeg = (minutes + seconds / 60) * 6;
+        const secondDeg = seconds * 6;
+
+        document.querySelector('.hour').style.transform = `rotate(${hourDeg}deg)`;
+        document.querySelector('.minute').style.transform = `rotate(${minuteDeg}deg)`;
+        document.querySelector('.second').style.transform = `rotate(${secondDeg}deg)`;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+</script>
+</body>
+</html>
