@@ -1,10 +1,10 @@
 import './App.css';
-function App() {
+function MyFunction(props) {
   return (
     <div className="App">
-      <h1>hi bro</h1>
+      <p>Hell0 {props.name}</p>
     </div>
   );
 }
 
-export default App;
+export default MyFunction;

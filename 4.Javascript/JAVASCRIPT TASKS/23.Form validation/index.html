@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #form {
+        border: 3px solid black;
+        border-radius: 15px;
+        margin-top: 40px;
+        width: 500px;
+        height: auto;
+        margin-left: 35%;
+      }
+      h1 {
+        font-size: 50px;
+        margin-left: 10px;
+      }
+      p,
+      span {
+        font-size: 20px;
+        text-transform: capitalize;
+        margin-left: 10px;
+      }
+      span {
+        margin-top: 10px;
+      }
+      select {
+        width: 120px;
+        height: 30px;
+        background-color: black;
+        margin-top: 10px;
+        color: white;
+      }
+      .input {
+        margin-left: 10px;
+        width: 90%;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 6px;
+      }
+      button {
+        width: 70%;
+        height: 30px;
+        background-color: green;
+        color: white;
+        margin-left: 15%;
+        margin-top: 15px;
+        border-radius: 15px;
+        border: 0cap;
+      }
+      #name,
+      #phone,
+      #passcon,
+      #gender1,
+      #cop {
+        font-size: 25px;
+        color: red;
+        margin-left: 10px;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <h1>Form validation</h1>
+      <p>name (8-50 characters)</p>
+      <input type="text" id="namecon" class="input" />
+      <div id="name"></div>
+      <p>Email</p>
+      <input type="email" name="" id="mail" class="input" />
+      <p>Phone number (10 digits)</p>
+      <input type="tel" id="phone1" class="input" />
+      <div id="phone"></div>
+      <p>Password</p>
+      <input type="text" id="pass" class="input" />
+      <div id="passcon"></div>
+      <p>gender</p>
+      <input
+        type="radio"
+        value="gender"
+        name="gender"
+        id="gne1"
+        onclick="hii()"
+      />male
+      <input
+        type="radio"
+        value="gender"
+        name="gender"
+        id="gne2"
+        onclick="hii()"
+      />female
+      <div id="gender1"></div>
+      <span>courses</span>
+      <select name="" id="bro" onclick="hii2()">
+        <option value="" onclick="rev()">select course</option>
+        <option value="" onclick="hii2()">c++</option>
+        <option value="" onclick="hii2()">html</option>
+        <option value="" onclick="hii2()">css</option>
+      </select>
+      <div id="cop"></div>
+      <button onclick="check()">submit</button>
+    </div>
+
+    <script>
+      const name = document.getElementById("namecon");
+      const phone = document.getElementById("phone1");
+      const password = document.getElementById("pass");
+
+      var gender = 0;
+      var courses = 0;
+
+      function check() {
+        var hlk = 0;
+        if (name.value.length == 0) {
+          let namediv = document.getElementById("name");
+          namediv.textContent = "name is required";
+          hlk += 1;
+        } else if (name.value.length < 6 || name.value.length > 50) {
+          let namediv = document.getElementById("name");
+          namediv.textContent = "name should be between 8 to 50";
+          hlk += 1;
+        } else {
+          let namediv = document.getElementById("name");
+          namediv.textContent = "";
+        }
+        if (phone.value.length == 0) {
+          let namediv = document.getElementById("phone");
+          namediv.textContent = "phone number is required";
+          hlk += 1;
+        } else if (phone.value.length != 10) {
+          let namediv = document.getElementById("phone");
+          namediv.textContent = "phone number should be 10 digits";
+          hlk += 1;
+        } else {
+          let namediv = document.getElementById("phone");
+          namediv.textContent = "";
+        }
+        let word = password.value;
+        let k = 0;
+        for (let i = 0; i < password.value.length; i++) {
+          if (word[i] != word[i].toUpperCase()) {
+            k += 1;
+          }
+        }
+        let j = 0;
+        for (let i = 0; i < password.value.length; i++) {
+          if (!isNaN(word[i])) {
+            j += 1;
+          }
+        }
+
+        if (k != 0) {
+          let check = document.getElementById("passcon");
+          check.textContent = "password must contains captial and number";
+          hlk += 1;
+        } else {
+          let check = document.getElementById("passcon");
+          check.textContent = "";
+        }
+        if (j == 0) {
+          let check = document.getElementById("passcon");
+          check.textContent = "password must contains captial and number";
+          hlk += 1;
+        } else {
+          let check = document.getElementById("passcon");
+          check.textContent = "";
+        }
+        if (gender == 0) {
+          let gendercon = document.getElementById("gender1");
+          gendercon.textContent = " please select gender";
+          hlk += 1;
+        } else {
+          let gendercon = document.getElementById("gender1");
+          gendercon.textContent = "";
+        }
+        if (courses == 0) {
+          let gendercon = document.getElementById("cop");
+          gendercon.textContent = " please select course";
+          hlk += 1;
+        } else {
+          let gendercon = document.getElementById("cop");
+          gendercon.textContent = "";
+        }
+        if (hlk == 0) {
+          alert("your form is validute");
+        }
+        console.log(document.getElementById("bro"));
+      }
+      function hii() {
+        gender += 1;
+      }
+      function hii2() {
+        courses += 1;
+      }
+      function rev() {
+        courses = 0;
+      }
+    </script>
+  </body>
+</html>
