@@ -1,10 +1,17 @@
 import './App.css';
-function MyFunction(props) {
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+function MyFunction() {
   return (
     <div className="App">
-      <p>Hell0 {props.name}</p>
+      <Home/>
+      <About/>
+      <Contact/>
     </div>
   );
 }
 
 export default MyFunction;
+
+
