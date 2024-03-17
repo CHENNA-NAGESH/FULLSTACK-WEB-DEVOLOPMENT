@@ -1,13 +1,9 @@
 import './App.css';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
+import LoginForm from './LoginForm';
 function MyFunction() {
   return (
     <div className="App">
-      <Home/>
-      <About/>
-      <Contact/>
+      <LoginForm />
     </div>
   );
 }
