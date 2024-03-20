@@ -6,7 +6,7 @@ export default function LoginForm(){
         alert("userName is:" + name + "\npassword is:" + password);
     }
     return(
-        <form>
+       <center> <form>
             <label>Enter your name:
                 <input type="text" value={name} onChange={(e)=>setName(e.target.value)}></input>
             </label><br></br><br></br>
@@ -14,6 +14,6 @@ export default function LoginForm(){
                 <input type="password" value={password} onChange={(e)=>setName1(e.target.value)}></input><br></br><br></br>
                 <button  onClick={submit1}>login</button>
             </label>
-        </form>
+        </form></center>
     );
 }
