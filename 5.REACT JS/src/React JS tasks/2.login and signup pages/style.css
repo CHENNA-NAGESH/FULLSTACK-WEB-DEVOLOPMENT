@@ -1,0 +1,24 @@
+.ul1{
+    list-style-type: none;
+}
+.p1{
+    color: red;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px;
+}
+.inp1{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    background-color: greenyellow;
+    margin-top: 20px;
+    border-radius: 20px;
+}
