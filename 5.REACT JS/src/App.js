@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LoginForm from "./React JS tasks/2.login and signup pages/LoginPage";
-import SignupForm from "./React JS tasks/2.login and signup pages/SignupPage";
-import Layout from "./React JS tasks/2.login and signup pages/Layout";
-import NoPage from "./React JS tasks/2.login and signup pages/NoPage";
+import SignupForm from "./React JS tasks/3.Login and signup form using bootstrap/SignupForm";
+import LoginForm from "./React JS tasks/3.Login and signup form using bootstrap/LoginForm";
+import Layout from "./React JS tasks/3.Login and signup form using bootstrap/Layout";
+import NoPage from "./React JS tasks/3.Login and signup form using bootstrap/NoPage";
 function MyFunction(){
   return (
     <BrowserRouter>
