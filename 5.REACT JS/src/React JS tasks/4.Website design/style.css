@@ -1,0 +1,20 @@
+.ul1{
+    list-style-type: none;
+    margin-left: 400px;
+    display: flex;
+    margin-top: 30px;
+}
+li a{
+    text-decoration: none;
+}
+.l1{
+    margin-left: 80px;
+    font-size: 20px;
+}
+.img1{
+    display: inline;
+    margin-top: 10px;
+}
+.na1{
+    display: flex;
+}
