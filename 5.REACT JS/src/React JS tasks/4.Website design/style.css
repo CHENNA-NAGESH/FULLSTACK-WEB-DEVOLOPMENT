@@ -1,20 +1,45 @@
-.ul1{
-    list-style-type: none;
-    margin-left: 400px;
+.nav1{
+    margin-left: 30px;
+}
+.head{
+    color: rgb(249, 219, 47);
+    margin-top: 50px;
+    text-align: center;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: rgb(92, 92, 90);
+}
+.card1{
+    width:80%;
+    margin-top: 50px;
+    gap: 40px;
+}
+.card2{
     display: flex;
-    margin-top: 30px;
+    flex-direction: row;
+    border: 0px;
 }
-li a{
-    text-decoration: none;
+.cardb{
+    text-align: justify;
 }
-.l1{
-    margin-left: 80px;
-    font-size: 20px;
+.div1{
+    width: 100%;
+    height:500px;
+    background-color: rgb(235, 233, 232);
 }
-.img1{
-    display: inline;
-    margin-top: 10px;
+.div2{
+    width: 37%;
+    height: 400px;
+    background-color: red;
+    float: left;
+    margin-left: 13%;
 }
-.na1{
-    display: flex;
+.div3{
+    font-size: 16px;
+    color: gold;
+    font-weight: 500;
+    transform: rotate(270deg);
+    width: 110px;
+    margin-top: 50px;
+    margin-left: -40px;
 }

@@ -1,34 +1,29 @@
-import { Outlet, Link } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import './style.css'
-import thub from './images/thublogo.png'
-const Layout = () => {
+import thublogo from './images/thublogo.png'
+function Layout() {
   return (
-    <>
-      <nav class='na1'>
-          <img src= {thub} alt="logo"  class='img1'/>
-        <center><ul class='ul1'>
-          <li class='l1'>
-            <Link to="/">Home</Link>
-          </li>
-          <li class='l1'>
-            <Link to="/Aboutpage">About</Link>
-          </li>
-          <li class='l1'>
-            <Link to="/Contactpage">Contact</Link>
-          </li>
-          <li class='l1'>
-            <Link to="/Loginpage">Login</Link>
-          </li>
-          <li class='l1'>
-            <Link to="/Signuppage">Signup</Link>
-          </li>
-        </ul></center>
-      </nav>
-
-      <hr></hr>
-      <Outlet />
-    </>
-  )
-};
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+          <Navbar.Brand href="/">
+             <img src={thublogo} alt="Thublogo" width="250" height="70"/> 
+          </Navbar.Brand>
+          </Nav>
+          <Nav>
+            <Nav.Link href="/Homepage" className='nav1'>Home</Nav.Link>
+            <Nav.Link href="/Aboutpage" className='nav1'>About</Nav.Link>
+            <Nav.Link href="/Contactpage" className='nav1'>Contact</Nav.Link>
+            <Nav.Link href="/Loginpage" className='nav1'>Login</Nav.Link>
+            <Nav.Link href="/Signuppage" className='nav1'>Signup</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
 
 export default Layout;
