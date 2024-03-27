@@ -24,13 +24,12 @@
 }
 .div1{
     width: 100%;
-    height:500px;
+    height:400px;
     background-color: rgb(235, 233, 232);
 }
 .div2{
     width: 37%;
     height: 400px;
-    background-color: red;
     float: left;
     margin-left: 13%;
 }
@@ -42,4 +41,182 @@
     width: 110px;
     margin-top: 50px;
     margin-left: -40px;
+}
+.div4{
+    float: right;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: -40px;
+    margin-left: 30px;
+}
+.div5{
+    width: 270px;
+}
+.div6{
+    font-size: 24px;
+    margin-top: -30px;
+    margin-left: 50px;
+    font-weight: 500;
+    color: RGB(85, 85, 85);
+}
+.div7{
+    width: 470px;
+    height: 300px;
+    text-align: justify;
+    margin-top: 30px;
+    color: RGB(85, 85, 85);
+}
+.iframe1{
+    margin-top: 50px;
+    border: 10px solid  rgb(201, 199, 199);
+    margin-left: -50px;
+}
+.div8{
+    width: 300px;
+    height: 150px;
+    background-color: gold;
+    margin-top: -100px;
+}
+.div9{
+    width: 100%;
+    height: 350px;
+}
+.div10{
+    width: 35%;
+    height: 100%;
+    margin-left: 13%;
+    float: left;
+}
+.div11{
+    font-size: 16px;
+    color: gold;
+    font-weight: 500;
+    transform: rotate(270deg);
+    width: 130px;
+    margin-left: -100px;
+    padding-top: 90px;
+}
+.d12{
+    width: 240px;
+}
+.div13{
+    font-size: 36px;
+    font-weight: 500;
+    float: right;
+    margin-left: 50px;
+    margin-top: -100px;
+}
+.div14{
+    margin-top: 30px;
+    color: RGB(85, 85, 85);
+    text-align: justify;
+    width: 83%;
+}
+.div15{
+    width: 600px;
+    height: 300px;
+    float: left;
+    margin-top: 40px;
+}
+.img{
+    width: 250px;
+    height: 250px;
+}
+.owl-dots{
+    display: none;
+}
+.div16{
+    width: 100%;
+    height: 670px;
+    background-color: rgb(245, 242, 242);
+}
+.h{
+    color: gold;
+    padding-top: 50px;
+}
+.sp1{
+    color: gold;
+    font-weight: 500;
+}
+.sp2{
+    margin-left: 20px;
+    font-weight: 500;
+}
+.div17{
+    margin-top: 45px;
+}
+.div18{
+    width: 75%;
+    height: 450px;
+    background-color: white;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+.div19{
+    width: 50%;
+    float: left;
+    height: 450px;
+}
+.h01{
+    color: RGB(85, 85, 85);
+    margin-top: 100px;
+}
+.h22{
+    margin-top: 40px;
+}
+.div20{
+    font-size: 14px;
+    width: 530px;
+    text-align: justify;
+    margin-top: 15px;
+}
+.div21{
+    background-color: black;
+    width: 80px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50px;
+    margin-top: 30px;
+    font-size: 12px;
+}
+.div22{
+    width: 100%px;
+    height: 300px;
+}
+.div23{
+    width: 600px;
+    height: 100%;
+    margin-left: 150px;
+    float: left;
+}
+.p1{
+    font-size: 16px;
+    color: gold;
+    font-weight: 500;
+    transform: rotate(270deg);
+    width: 130px;
+    margin-left: -70px;
+    padding-top: 80px;
+    float: left;
+}
+.h02{
+    float: left;
+    margin-top: 30px;
+    width: 500px;
+    display: inline;
+}
+.div24{
+    width: 440px;
+    text-align: justify;
+    margin-left: 60px;
+    padding-top: 100px;
+}
+.div25{
+    width: 600px;
+    height: 100%;
+    margin-top: 30px;
+    float: left;
 }
