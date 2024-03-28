@@ -220,3 +220,36 @@
     margin-top: 30px;
     float: left;
 }
+.div26{
+    width: 100%;;
+    height: 980px;
+    background-color: rgb(248, 246, 246);
+    margin-top: 30px;
+}
+.card11{
+    width: 80%;
+    margin-top: 70px;
+    gap: 55px;
+    margin-left: 150px;
+}
+.img22{
+    height: 250px;
+}
+.card12{
+    height: 680px;
+    border: none;
+}
+.cb1{
+    margin-top: 20px;
+    width: 340px;
+    text-align: justify;
+    margin-left: 15px;
+}
+.d27{
+    width: 100%;
+    margin-top: 20px;
+    height: 120px;
+}
+.slick-slider{
+    width: 1250px;
+}
