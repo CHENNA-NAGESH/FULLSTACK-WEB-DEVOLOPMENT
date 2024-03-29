@@ -24,7 +24,7 @@ export default function SimpleSlider() {
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 1
+    slidesToScroll: 2
   };
   return (
     <div className='d27'>

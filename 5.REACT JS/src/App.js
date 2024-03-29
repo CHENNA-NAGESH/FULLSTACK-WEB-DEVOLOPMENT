@@ -7,6 +7,7 @@ import Component4 from "./React JS tasks/4.Website design/Component4";
 import Component5 from "./React JS tasks/4.Website design/Component5";
 import Component6 from "./React JS tasks/4.Website design/Component6";
 import SimpleSlider from "./React JS tasks/4.Website design/Component7";
+import Footer from "./React JS tasks/4.Website design/Footer";
 function MyFunction(){
   return (
     <div>
@@ -19,6 +20,7 @@ function MyFunction(){
       <Component5 />
       <Component6 />
       <SimpleSlider />
+      <Footer/>
     </div>
   );
 }
