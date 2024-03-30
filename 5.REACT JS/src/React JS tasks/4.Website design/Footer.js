@@ -27,6 +27,29 @@ export default function Footer(){
                     <li className='li3'>Terms & Conditions</li>
                 </ul>
             </div>
+            <div className='d33'>
+                <h6>GET IN TOUCH</h6>
+                <div className='d34'>
+                    <div className='d35'>
+                        <i class="fa-solid fa-envelope fa-sm"  style={{color: "white"}}></i>
+                        <p className='p22'>support@technicalhub.io</p>
+                    </div>
+                    <div className='d36'>
+                    <i class="fa-solid fa-phone fa-sm" style={{color: "white"}}></i>
+                        <p className='p22'>+91 83 43 81 81 81</p>
+                    </div>
+                    <p className='p33'>Get latest news & updates and special promotions.</p>
+                    <div className='d37'>
+                        <input type='text' className='inp11' placeholder='Email address*'></input>
+                        <button className='btn11'>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div className='d38'>
+                <span className='p4'>© Technical Hub 2023, All Rights Reserved.</span>
+                <span className='sp3'>Privacy Policy</span>
+                <span className='sp4'>Terms & Conditions</span>
+            </div>
         </div>
     );
 }

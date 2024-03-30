@@ -313,3 +313,70 @@ h6{
 .li3::marker{
     color: white;
 }
+.d33{
+    width: 400px;
+    height: 230px;
+    margin-left: 2%;
+    float: left;
+    color: white;
+}
+.p22{
+    display: inline;
+    margin-left: 10px;
+}
+.d35{
+    margin-top: 20px;
+}
+.d36{
+    margin-top: 10px;
+}
+.p33{
+    font-weight: 100;
+    margin-top: 10px;
+}
+.d37{
+    margin-top: 30px;
+}
+.inp11{
+    padding-left: 20px;
+    height: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 250px;
+    border: 0px;
+}
+.btn11{
+    height: 40px;
+    border: 0px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width: 100px;
+    background-color: rgb(71, 194, 71);
+    color: white;
+}
+.d38{
+    width: 100%;
+    height: 49px;
+    background-color: rgb(44, 45, 45);
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.p4{
+    color: rgb(143, 140, 140);
+    font-size: 14px;
+    margin-left: 12%;
+    word-spacing: 3px;
+}
+.sp3{
+    color: rgb(143, 140, 140);
+    font-size: 14px;
+    margin-left: 39%;
+    word-spacing: 3px;
+}
+.sp4{
+    color: rgb(143, 140, 140);
+    font-size: 14px;
+    margin-left: 3%;
+    word-spacing: 3px;
+}
